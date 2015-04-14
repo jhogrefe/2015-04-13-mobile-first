@@ -1,0 +1,225 @@
+/* Box Model */
+html{
+  box-sizing: border-box;
+}
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+
+/* Add heights to make children height-setting possible. */
+html, body{
+  height: 100%;
+}
+
+.top-announcement{
+  background: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-family: Georgia, serif;
+}
+
+.hero{
+  background: url(images/kitten1.jpg);
+  padding: 20px 20px 40px 20px;
+  background-size: cover;
+}
+
+.hero__logo{
+  float: left;
+}
+.hero__logo img{
+  width: 120px;
+}
+
+.hero__hamburger{
+  float: right;
+}
+.hero__hamburger img{
+  width: 45px;
+}
+
+.hero__description-header{
+  margin-bottom: 30px;
+  margin-top: 100px;
+  font-family: Georgia, serif;
+  color: #fff;
+  font-weight: normal;
+}
+.hero__description-content{
+  line-height: 1.5;
+  font-family: Georgia, serif;
+  margin-bottom: 40px;
+}
+.hero__description-learn_more{
+  border: 1px solid #fff;
+  padding: 10px 16px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.mobile-nav{
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -220px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 100%;
+  background: #ccc;
+  width: 220px;
+}
+.mobile-nav--is_shown{
+  display: block;
+}
+.mobile-nav__link{
+  padding: 12px 8px;
+  background: #ccc;
+  border-bottom: 1px solid #aaa;
+  display: block;
+  text-decoration: none;
+  color: #236297;
+  font-family: Georgia, serif;
+}
+.mobile-nav__link:hover{
+  background: #cfdbe6;
+}
+.is-mobile-nav-shown{
+  -webkit-transform: translateX(-220px);
+  transform: translateX(-220px);
+}
+
+.resume{
+  background: blue;
+  padding: 60px;
+}
+.resume__item{
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  padding-top: 40px;
+}
+.resume__item img{
+  width: 200px;
+}
+.resume p{
+  font-family: Georgia, serif;
+  color: #999;
+  line-height: 1.4;
+  margin: 10px 0;
+}
+.resume a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #52A6FE;
+}
+
+.latest{
+  padding: 60px;
+}
+
+.latest-header{
+  font-family: Georgia, serif;
+  color: #ccc;
+}
+
+.latest__item{
+/* Margin*/
+  
+}
+
+.latest__item-header{
+  border-bottom: 1px solid #6792BC;
+  padding-left: 40px;
+  background-repeat: no-repeat;
+  font-size: 28px;
+  font-weight: normal;
+  padding-bottom: 4px;
+  background-position-y: -2px;
+  
+  /* Default: */
+  background-image: url(http://cl.ly/adDm/Screen%20Shot%202015-04-13%20at%2011.49.35%20AM.png);
+}
+
+.latest__item-header--mag_glass{
+  background-image: url(http://cl.ly/adeh/Screen%20Shot%202015-04-13%20at%2011.45.48%20AM.png);
+}
+.latest__item-header--talk_bubble{
+  background-image: url(http://cl.ly/adeI/Screen%20Shot%202015-04-13%20at%2011.47.02%20AM.png);
+}
+
+.latest__item-image{
+  width: 230px;
+  margin: 0 auto;
+  display: block;
+}
+
+.latest__item-subheader{
+  
+}
+
+.latest__item-date{
+  font-style: italic;
+}
+
+.latest__item-viewlink{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #297AE5;
+}
+
+/* TODO: OOCSS PLEASE */
+.books{
+  padding: 60px;
+  background: #eee;
+}
+
+.books__item{
+/* Margin*/
+  
+}
+
+.books__item-header{
+  border-bottom: 1px solid #6792BC;
+  padding-left: 40px;
+  background-repeat: no-repeat;
+  font-size: 28px;
+  font-weight: normal;
+  padding-bottom: 4px;
+  background-position-y: -2px;
+  
+  /* Default: */
+  background-image: url(http://cl.ly/adDm/Screen%20Shot%202015-04-13%20at%2011.49.35%20AM.png);
+}
+
+.books__item-header--mag_glass{
+  background-image: url(http://cl.ly/adeh/Screen%20Shot%202015-04-13%20at%2011.45.48%20AM.png);
+}
+.books__item-header--talk_bubble{
+  background-image: url(http://cl.ly/adeI/Screen%20Shot%202015-04-13%20at%2011.47.02%20AM.png);
+}
+
+.books__item-image{
+  width: 230px;
+  margin: 0 auto;
+  display: block;
+}
+
+.books__item-subheader{
+  
+}
+
+.books__item-date{
+  font-style: italic;
+}
